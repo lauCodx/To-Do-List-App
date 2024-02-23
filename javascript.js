@@ -3,7 +3,8 @@ const listCont = document.getElementById('list-container');
 
 function addList() {
     if (inputBox.value === ''){
-        alert ('Enter something!')
+        alert ('Enter something!');
+        
     }
     else{
         let li = document.createElement("li");
@@ -15,14 +16,29 @@ function addList() {
     }
 
     inputBox.value = "";
+    saveData();
 }
 
 // To check and Delete list
 listCont.addEventListener('click', function(e){
     if(e.target.tagName === 'LI'){
         e.target.classList.toggle('checked')
+        saveData();
     }
     else if (e.target.tagName === 'SPAN'){
         e.target.parentElement.remove();
+        saveData();
     }
 }, false);
+
+// To save Data
+function saveData(){
+    localStorage.setItem('data', listCont.innerHTML);
+}
+
+// To show Data
+function show(){
+    listCont.innerHTML = localStorage.getItem('data')
+}
+
+show();
