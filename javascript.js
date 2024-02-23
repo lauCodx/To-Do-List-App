@@ -19,6 +19,7 @@ function addList() {
     saveData();
 }
 
+
 // To check and Delete list
 listCont.addEventListener('click', function(e){
     if(e.target.tagName === 'LI'){

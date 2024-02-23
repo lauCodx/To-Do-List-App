@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root{
-    --bgc: #070331;
+    --bgc: #6d0505;
     --checked:#555;
+    --hover:#e92929;
   
 }
 
@@ -12,6 +13,14 @@
     font-family: 'Lato', san-serif;
     font-weight: 800;
     box-sizing: border-box;
+}
+
+.header{
+    text-align: center;
+    font-size: 40px;
+    padding: 50px 0 0 0;
+    color: #fff;
+
 }
 
 .container {
@@ -26,7 +35,7 @@
     width: 100%;
     max-width: 540px;
     background: #f4f4f4;
-    margin: 100px auto 20px;
+    margin: 50px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
@@ -42,7 +51,7 @@
 
 .todo-app img{
     width: 30px;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .row{
@@ -73,6 +82,11 @@ button{
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+}
+
+button:hover{
+    padding: 17px 51px;
+    background: var(--hover);
 }
 
 ul li{
@@ -121,7 +135,7 @@ ul li span {
 }
 
 ul li span:hover{
-    background: #e92929;
+    background:var(--hover) ;
     color: #fff;
 
 }
