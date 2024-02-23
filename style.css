@@ -3,7 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', san-serif;
+    font-weight: 800;
     box-sizing: border-box;
 }
 
@@ -18,7 +19,7 @@
 .todo-app{
     width: 100%;
     max-width: 540px;
-    background: #edeef0;
+    background: #f4f4f4;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
@@ -82,13 +83,13 @@ ul li::before{
     content:'';
     position: absolute;
     height: 28px;
-    /* width: 28px; */
-    /* border-radius: 50%; */
-    /* background-image: url(images/unchecked.png); */
-    /* block-size: cover; */
-    /* background-position: center; */
-    /* top: 12px; */
-    /* left: 8px;  */
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px; 
 } 
 
 ul li.checked{
@@ -96,7 +97,7 @@ ul li.checked{
     text-decoration: line-through;
 }
 
-ul li.check::before{
+ul li.checked::before{
     background-image:url(images/checked.png) ;
 }
 
