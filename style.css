@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,11 +14,11 @@
     background-color: #070331  ;
     padding: 10px;
 }
-
+ 
 .todo-app{
     width: 100%;
     max-width: 540px;
-    background: #b1b1b1;
+    background: #edeef0;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
@@ -31,11 +33,16 @@
     
 }
 
+.todo-app img{
+    width: 30px;
+    margin-left: 10px;
+}
+
 .row{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #edeef0 ;
+    background:  #b1b1b1;
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
@@ -54,7 +61,7 @@ button{
     border: none;
     outline: none;
     padding:16px 50px ;
-    background: #ff5945;
+    background: #070331;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -75,16 +82,16 @@ ul li::before{
     content:'';
     position: absolute;
     height: 28px;
-    width: 28px;
-    border-radius: 50%;
-    background-image: url(images/unchecked.png);
-    block-size: cover;
-    background-position: center;
-    top: 12px;
-    left: 8px; 
-}
+    /* width: 28px; */
+    /* border-radius: 50%; */
+    /* background-image: url(images/unchecked.png); */
+    /* block-size: cover; */
+    /* background-position: center; */
+    /* top: 12px; */
+    /* left: 8px;  */
+} 
 
-ul li.check{
+ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
@@ -107,6 +114,7 @@ ul li span {
 }
 
 ul li span:hover{
-    background: #edeef0;
+    background: #660404;
+    color: #fff;
 
 }
