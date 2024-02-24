@@ -15,7 +15,7 @@ function addList() {
         li.appendChild(span)
     }
 
-    inputBox.value = "";
+    // inputBox.value = ""; 
     saveData();
 }
 
@@ -30,7 +30,8 @@ listCont.addEventListener('click', function(e){
         e.target.parentElement.remove();
         saveData();
     }
-}, false);
+
+});
 
 // To save Data
 function saveData(){

@@ -73,10 +73,10 @@ input{
     font-weight: 14px;
 }
 
-button{
+button {
     border: none;
     outline: none;
-    padding:16px 50px ;
+    padding:16px 50px;
     background: var(--bgc);
     color: #fff;
     font-size: 16px;
@@ -117,7 +117,7 @@ ul li.checked{
     text-decoration: line-through;
 }
 
-ul li.checked::before{
+ul li.checked::before {
     background-image:url(images/checked.png) ;
 }
 
@@ -134,7 +134,7 @@ ul li span {
     border-radius: 50px;
 }
 
-ul li span:hover{
+ul li span:hover {
     background:var(--hover) ;
     color: #fff;
 
