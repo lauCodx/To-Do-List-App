@@ -15,7 +15,7 @@ function addList() {
         li.appendChild(span)
     }
 
-    inputBox.value = ""; 
+    // inputBox.value = ""; 
     saveData();
 }
 
